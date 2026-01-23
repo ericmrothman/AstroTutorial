@@ -1,0 +1,5 @@
+[build]
+  # This tells Netlify: "Don't try to build anything."
+  command = "echo 'Skipping build'"
+  # This tells Netlify: "Just upload this folder."
+  publish = "dist"

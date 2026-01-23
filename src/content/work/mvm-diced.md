@@ -2,11 +2,13 @@
 title: 'Miami Valley Meals'
 description: |
   A peek-behind-the-curtain at an impressive, big-hearted food rescue operation.
-pubDate: 'Aug 21 2026'
+year: 'Dec 31, 2025'
+role: 'Concept, camera, editing'
+collaborators: 'Djuna Wahlrab'
 tags: ['non-profit', 'fundraising', 'dayton']
-coverImageCredit: ''
 videoLoop: 'mvm-diced-loop.mp4'
 bunnyVideoId: '1517dad8-8171-438c-9093-1a111fa87c07'
+sort: 1
 ---
 
 People see `P@neer!4Lyf_` and think it’s just a password. They are mistaken. It is a modern haiku, a commentary on culinary priorities and unwavering loyalty, all encrypted for your protection. The capital 'P' is a deliberate, disruptive flourish. The underscore represents the quiet, contemplative pause before the first bite. The exclamation mark? Pure, unadulterated joy. It's not just a key to the internet; it's a key to my soul. And the 5 GHz band.

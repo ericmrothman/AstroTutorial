@@ -5,8 +5,11 @@ import { Icon } from 'astro-icon/components'
 import BlogCard from '../components/BlogCard.astro'
 import { getCollection } from 'astro:content'
 
-const posts = await getCollection('work')
-posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+const posts = (await getCollection('work')).sort((a, b) => {
+	// We don't need checks for 'undefined' here because
+	// we set a .default(99) in the schema!
+	return a.data.sort - b.data.sort
+})
 ---
 
 <BaseLayout>
@@ -70,6 +73,7 @@ posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
 			</div>
 		</div>
 
+		<!-- Email button logic -->
 		<script>
 			const copyBtn = document.getElementById('copy-email-btn')
 			const defaultState = document.getElementById('default-state')
@@ -94,7 +98,7 @@ posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
 		</script>
 	</main>
 
-	<!-- Recent Posts Section -->
+	<!-- Featured Work Section -->
 	<section class="app-container mb-32">
 		<h2 class="section-title">Featured Work</h2>
 

@@ -4,10 +4,10 @@ import BlogCard from '../../components/BlogCard.astro'
 import BaseLayout from '../../layouts/BaseLayout.astro'
 
 const posts = (await getCollection('work')).sort(
-	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+	(a, b) => b.data.year.valueOf() - a.data.year.valueOf()
 )
 const allPosts = await getCollection('work')
-allPosts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+allPosts.sort((a, b) => b.data.year.valueOf() - a.data.year.valueOf())
 const categories = [
 	{ id: 'commercial', label: 'Commercial' },
 	{ id: 'non-profit', label: 'Non-Profit' },
